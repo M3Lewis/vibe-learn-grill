@@ -19,8 +19,8 @@ This skill has one job: help the user learn a technical topic by building a smal
 
 Use only two project-level learning files unless the user explicitly asks for more:
 
-- `VIBE-PLAN.md` — the handoff from web planning to IDE/coding execution.
-- `LEARN-GRILL.md` — weak concepts, mistakes, and review prompts.
+- `VIBE-PLAN.md` — the Chinese handoff from web planning to IDE/coding execution.
+- `LEARN-GRILL.md` — Chinese weak concepts, mistakes, and review prompts.
 
 If the environment cannot write files, output copyable markdown blocks instead.
 
@@ -50,6 +50,7 @@ Do not run a heavy stage machine. Move forward when it helps learning momentum.
   - The user has explicitly allowed file writes (by the environment or by saying “write it”).
   - If uncertain, output a copyable markdown block instead.
 - **Card language**: All cards in `LEARN-GRILL.md` must be written in Chinese (中文). Fields like `Topic`, `Question`, `Ideal answer`, `My mistake`, `Review prompt` should use Chinese. The goal is to make review natural and frictionless for a Chinese-speaking learner.
+- **Persistent file language**: `VIBE-PLAN.md` and `LEARN-GRILL.md` must be written in Chinese by default. File paths, code identifiers, commands, dependency names, and machine-readable status values such as `weak/shaky/stable/mastered` may remain in English.
 - **Module-card index (lightweight)**: In project mode, when the number of cards in `LEARN-GRILL.md` reaches ~8, or upon user request, the AI should ask whether to generate/update the “模块-卡片索引” block at the top of the file. Follow the maintenance rules in `references/review-cards.md`. Do not auto-update every time; keep it low-friction.
 
 ## Gotchas

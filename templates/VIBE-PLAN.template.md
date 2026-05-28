@@ -1,72 +1,72 @@
 # VIBE-PLAN.md
 
-## Learning Goal
-I want to learn: `<topic>`
+## 学习目标
+我想学习：`<主题>`
 
-By the end, I should be able to:
-- Explain the core concepts in my own words.
-- Read and modify the project code without cargo-culting.
-- Predict where bugs would appear when requirements change.
+完成后，我应该能够：
+- 用自己的话解释核心概念。
+- 读懂并修改项目代码，而不是照抄模式。
+- 在需求变化时预测 bug 可能出现在哪里。
 
-## Project Idea
-`<one-sentence project description>`
+## 项目想法
+`<用一句话描述项目>`
 
-## Tech Stack
-- Language:
-- Framework / Runtime:
-- Storage:
-- Testing:
-- Optional libraries:
+## 技术栈
+- 语言：
+- 框架 / 运行时：
+- 存储：
+- 测试：
+- 可选库：
 
-## Scope Guardrails
-- Keep the project small enough to finish in 3-7 modules.
-- Prefer learning density over production completeness.
-- Avoid infrastructure unless it teaches the target topic.
+## 范围边界
+- 项目应足够小，控制在 3-7 个模块内完成。
+- 优先保证学习密度，而不是追求生产级完整度。
+- 除非基础设施本身就是学习目标，否则避免引入复杂基础设施。
 
-## Modules
+## 模块
 
-### Module 1: `<name>`
-Goal:
+### 模块 1：`<名称>`
+目标：
 
-Build:
-- 
+要构建：
+-
 
-Files likely involved:
-- 
+可能涉及的文件：
+-
 
-What I should learn:
-- 
+我应该学会：
+-
 
-Concepts to grill:
-- 
+需要拷问的概念：
+-
 
-Done when:
-- 
+完成标准：
+-
 
-### Module 2: `<name>`
-Goal:
+### 模块 2：`<名称>`
+目标：
 
-Build:
-- 
+要构建：
+-
 
-Files likely involved:
-- 
+可能涉及的文件：
+-
 
-What I should learn:
-- 
+我应该学会：
+-
 
-Concepts to grill:
-- 
+需要拷问的概念：
+-
 
-Done when:
-- 
+完成标准：
+-
 
-## Coding Learning Contract
-- Implement one small module or file group at a time.
-- After each key file/module, pause for codewalk.
-- Ask one grill question before moving on.
-- If I am wrong or shaky, create/update `LEARN-GRILL.md`.
-- At the start of the next session, review 3-5 weak cards first.
+## 编码学习约定
+- 一次只实现一个小模块或一组相关文件。
+- 每完成一个关键文件或模块后，暂停做 codewalk。
+- 继续下一步前，先问一个 grill 问题。
+- 如果我答错或回答不稳，创建或更新 `LEARN-GRILL.md`。
+- 下次会话开始时，先复习 3-5 张薄弱或到期卡片。
 
-## Next Session Start Prompt
-Continue from this `VIBE-PLAN.md`. First check `LEARN-GRILL.md` if it exists, quiz me on 3 weak/due cards, then continue with the next smallest module.
+## 下次会话启动提示
+从这个 `VIBE-PLAN.md` 继续。如果存在 `LEARN-GRILL.md`，先检查它并用 3 张薄弱或到期卡片测我，然后继续推进下一个最小模块。
