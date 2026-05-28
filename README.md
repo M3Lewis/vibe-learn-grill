@@ -18,6 +18,17 @@ It avoids a heavy coaching system. The workflow centers on two durable project f
 - Maintains lightweight review cards in Chinese for concepts the learner actually missed or half-understood.
 - Offers a module-card index when review cards accumulate, so weak spots can be seen by module.
 
+## Core learning layers
+
+This skill treats learning as four layers. The first three are the core loop; the fourth is optional guidance for transfer.
+
+| Layer | Meaning | Current rating | Key mechanism | Comment |
+|---|---|---|---|---|
+| Layer 1: Know | Hear about the concept | Good | Concept-mode questions + project-mode initial grill | Directly hits the target: the user must acknowledge whether they have encountered the concept. |
+| Layer 2: Understand | Know why it exists | Good+ | Design-oriented grill questions (“why here?”, “why this design?”) + design reasoning in codewalks | Effectively tests causal understanding, but depends on the quality of the AI's questions. |
+| Layer 3: Apply | Make correct decisions inside the project | Good+ and still improving | Code-free restatement + hypothetical change questions (“requirement becomes Y; which file changes?”) | The user must organize the implementation logic themselves instead of passively repeating the AI. This is the key bridge from understanding to application. |
+| Layer 4: Transfer | Recognize the same pattern in other domains | Medium to good | Optional migration prompts in `references/codewalk-and-grill.md` | Plants transfer awareness with light practice, but does not persist or test it. It upgrades the skill from “missing step” to “guided transfer.” |
+
 ## Operating modes
 
 - **Plan Mode**: convert a learning goal into a practical `VIBE-PLAN.md`.
