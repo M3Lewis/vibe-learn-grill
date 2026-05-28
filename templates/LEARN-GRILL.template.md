@@ -5,37 +5,24 @@
 ## 模块-卡片索引（可选，用于直观查看问题分布与模块间联系）
 
 <!--
-当卡片数量达到约 10 张时，或你主动要求，AI 会生成/更新此索引。
-索引格式示例：
-
-- **配置模块** (`src/config/`) → CARD-001
-  → 被路径模块依赖
-- **路径模块** (`src/path/`) → CARD-002, CARD-005
-  → 调用输出模块
-- **输出模块** (`src/output/`) → CARD-006
-
-你可以手动添加箭头（→）或缩进来表示模块间的依赖关系。
+由 AI 按 references/review-cards.md 中的维护规则生成或更新。
+为空时可以保留本区块；有索引时直接替换这段注释。
 -->
-
-## 复习规则
-- 每次学习/编码开始时，复习 **3 张**卡片，最多 5 张。
-- 优先选 `弱`、`不稳`、到期、或与当前模块相关的卡片。
-- 不要为我已完全掌握的知识点新建卡片。
-- 每张卡片保持简短，便于日后快速提问。
 
 ## 卡片
 
 <!--
-复制以下模版，每张卡片一个：
+卡片创建、调度和复习规则以 references/review-cards.md 为准。
+复制以下模板，每张卡片一个：
 
 ## CARD-001
 
 Topic（主题）:
 File（关联文件）:
-Status（状态）: 弱 | 不稳 | 稳定 | 掌握
+Status（状态）: weak | shaky | stable | mastered
 Strength（强度）: 1/5
-Last reviewed（上次复习）: YYYY-MM-DD
-Next review（下次复习）: YYYY-MM-DD 或 next-session
+Last reviewed（上次复习）:
+Next review（下次复习）:
 
 Question（问题）:
 
