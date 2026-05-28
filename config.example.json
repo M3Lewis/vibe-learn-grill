@@ -1,0 +1,9 @@
+{
+  "review_card_limit_default": 3,
+  "review_card_limit_max": 5,
+  "side_effect_policy": "Do not write or modify files unless explicitly requested by the user.",
+  "learning_files": [
+    "VIBE-PLAN.md",
+    "LEARN-GRILL.md"
+  ]
+}
