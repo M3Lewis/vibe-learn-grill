@@ -50,6 +50,7 @@ Do not run a heavy stage machine. Move forward when it helps learning momentum.
   - The user has explicitly allowed file writes (by the environment or by saying “write it”).
   - If uncertain, output a copyable markdown block instead.
 - **Card language**: All cards in `LEARN-GRILL.md` must be written in Chinese (中文). Fields like `Topic`, `Question`, `Ideal answer`, `My mistake`, `Review prompt` should use Chinese. The goal is to make review natural and frictionless for a Chinese-speaking learner.
+- **Module-card index (lightweight)**: In project mode, when the number of cards in `LEARN-GRILL.md` reaches ~8, or upon user request, the AI should ask whether to generate/update the “模块-卡片索引” block at the top of the file. Follow the maintenance rules in `references/review-cards.md`. Do not auto-update every time; keep it low-friction.
 
 ## Gotchas
 
@@ -67,4 +68,3 @@ Do not run a heavy stage machine. Move forward when it helps learning momentum.
 - `references/review-cards.md` — lightweight scheduling and card update rules.
 - `references/claude-registry-snippet.md` — optional `CLAUDE.md` registry entry.
 - `scripts/init_learning_files.py` — optional helper to create `VIBE-PLAN.md` and `LEARN-GRILL.md` without overwriting existing files.
-
