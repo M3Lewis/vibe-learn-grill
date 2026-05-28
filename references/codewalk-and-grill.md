@@ -42,6 +42,12 @@ Grill:
 Ask one question that checks understanding.
 ```
 
+After the grill question, optionally ask for a **code-free restatement**:
+
+> “现在请不看代码，用一两句话说出你会怎么实现这个模块的核心逻辑。说不出来也没关系，可以试着说。”
+
+Only do this for meaningful modules (3-5 files). Skip it if the user seems tired or wants to move on.
+
 ## Good grill question patterns
 
 Prefer:
