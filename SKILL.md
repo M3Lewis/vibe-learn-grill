@@ -51,6 +51,7 @@ Do not run a heavy stage machine. Move forward when it helps learning momentum.
   - If uncertain, output a copyable markdown block instead.
 - **Card language**: All cards in `LEARN-GRILL.md` must be written in Chinese (中文). Fields like `Topic`, `Question`, `Ideal answer`, `My mistake`, `Review prompt` should use Chinese. The goal is to make review natural and frictionless for a Chinese-speaking learner.
 - **Persistent file language**: `VIBE-PLAN.md` and `LEARN-GRILL.md` must be written in Chinese by default. File paths, code identifiers, commands, dependency names, and machine-readable status values such as `weak/shaky/stable/mastered` may remain in English.
+- **Card reading discipline**: Keep `LEARN-GRILL.md` as one file divided into `Active Cards` and `Mastered Cards`. Review normally reads active cards first; mastered card bodies are skipped unless the user asks for one or a random check selects one.
 - **Module-card index (lightweight)**: In project mode, when the number of cards in `LEARN-GRILL.md` reaches ~8, or upon user request, the AI should ask whether to generate/update the “模块-卡片索引” block at the top of the file. Follow the maintenance rules in `references/review-cards.md`. Do not auto-update every time; keep it low-friction.
 - **Cross-session recovery**: When starting a conversation in project mode, read the “学习进度” block in `LEARN-GRILL.md` (if present) to determine which module is active and what to review next. Follow `references/review-cards.md` section “学习进度区块维护规则”. Do not default to drilling all weak cards.
 

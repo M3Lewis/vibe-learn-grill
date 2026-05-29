@@ -7,7 +7,7 @@ A lightweight Codex/Claude skill for learning technical topics by building a sma
 It avoids a heavy coaching system. The workflow centers on two durable project files:
 
 - `VIBE-PLAN.md` — project plan and web-to-IDE handoff.
-- `LEARN-GRILL.md` — weak concepts, mistakes, review prompts, and an optional module-card index.
+- `LEARN-GRILL.md` — weak concepts, mistakes, review prompts, active/mastered card sections, and an optional module-card index.
 
 ## What it does
 
@@ -16,6 +16,7 @@ It avoids a heavy coaching system. The workflow centers on two durable project f
 - Explains code by module boundaries: purpose, key pieces, data flow, design reasons, and likely confusion points.
 - Asks one grill question at a time, focused on transfer, debugging, and prediction.
 - Maintains lightweight review cards in Chinese for concepts the learner actually missed or half-understood.
+- Keeps active and mastered cards in separate sections so normal reviews read active cards first and skip mastered card bodies by default.
 - Offers a module-card index when review cards accumulate, so weak spots can be seen by module.
 
 ## Core learning layers
@@ -66,9 +67,16 @@ python .claude/skills/vibe-learn-grill/scripts/init_learning_files.py --all
 
 This creates `VIBE-PLAN.md` and `LEARN-GRILL.md` from templates, without overwriting existing files unless `--force` is passed.
 
-## Review cards and module index
+## Review cards, active sections, and module index
 
 `LEARN-GRILL.md` is intentionally small. Cards should be created only when the learner gets something wrong, gives a shaky answer, confuses concepts, misses data flow, or cannot transfer an idea to a nearby change.
+
+Cards stay in one file, but the file is divided by review activity:
+
+- `Active Cards` contains `weak`, `shaky`, and `stable` cards.
+- `Mastered Cards` contains only `mastered` cards.
+
+Normal review starts from `Active Cards`. `Mastered Cards` is scanned only by title and metadata unless the user asks for a specific mastered card, a random check selects one, or a global cleanup/index task needs more context. Card IDs are never renumbered. Cards that cross between active and mastered are moved in batches at the end of a session and appended to the target section.
 
 When the file reaches roughly 8-10 cards, or when the user asks, the skill can offer to generate/update a `模块-卡片索引` block at the top of `LEARN-GRILL.md`. The index groups cards by file/module and leaves room for simple arrows or indentation to show module relationships.
 
